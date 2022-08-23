@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Tree Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="title">Tree Visualization</div>
+      <label>Nodes : </label> <br />
+      <input type="text" id="node-input" name="nodes" />
+      <div id="visualizationType">
+        <button onclick="binaryTree()">Binary Tree Visualization</button>
+        <button onclick="heapify()">Heapify</button>
+        <button onclick="binarySearchTree()">
+          Binary Search Tree Visualization
+        </button>
+      </div>
+    </header>
+    <img src="logo.png" alt="logo" width="250px" height="250px" />
+    <div id="blurb">
+      <div id="visualizationTypeTitle"></div>
+      <div id="instructions"></div>
+    </div>
+    <div id="binary-Tree"></div>
+    <div id="nodeVisualization"></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./nodes/js"></script>
+    <script src="./heap.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
